@@ -1,0 +1,619 @@
+.curriculum-page {
+    background: #ffffff;
+    color: #102a43;
+}
+
+
+/* =========================
+   HERO
+   ========================= */
+
+.curriculum-hero {
+    position: relative;
+    padding: 100px 0 95px;
+    background: linear-gradient(
+        135deg,
+        #071b33 0%,
+        #0b3c7b 100%
+    );
+    overflow: hidden;
+}
+
+.curriculum-hero::before {
+    content: "";
+    position: absolute;
+    width: 430px;
+    height: 430px;
+    top: -240px;
+    right: -100px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.035);
+}
+
+.curriculum-hero::after {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    bottom: -210px;
+    left: 7%;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 50%;
+}
+
+.curriculum-hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+.curriculum-label {
+    display: inline-block;
+    margin-bottom: 18px;
+    color: #b9d5f5;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.curriculum-hero h1 {
+    margin: 0;
+    color: #ffffff;
+    font-size: clamp(38px, 5vw, 64px);
+    line-height: 1.08;
+    font-weight: 700;
+    letter-spacing: -1.5px;
+}
+
+.curriculum-hero p {
+    max-width: 700px;
+    margin: 22px 0 0;
+    color: rgba(255, 255, 255, 0.78);
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+
+/* =========================
+   INTRO
+   ========================= */
+
+.curriculum-intro {
+    padding: 90px 0;
+    background: #ffffff;
+}
+
+.curriculum-intro-grid {
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 75px;
+    align-items: center;
+}
+
+.curriculum-intro-text > span,
+.curriculum-section-heading > div > span,
+.industry-content > span,
+.curriculum-closing-inner > span {
+    display: block;
+    margin-bottom: 13px;
+    color: #0b3c7b;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+}
+
+.curriculum-intro-text h2 {
+    max-width: 680px;
+    margin: 0 0 22px;
+    color: #102a43;
+    font-size: clamp(30px, 4vw, 44px);
+    line-height: 1.15;
+    letter-spacing: -1px;
+}
+
+.curriculum-intro-text p {
+    max-width: 720px;
+    margin: 0 0 15px;
+    color: #60758a;
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+.curriculum-intro-text p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================
+   HIGHLIGHT
+   ========================= */
+
+.curriculum-highlight {
+    position: relative;
+    padding: 34px;
+    min-height: 270px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    background: #f5f8fc;
+    border: 1px solid #e3eaf2;
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+.curriculum-highlight::before {
+    content: "";
+    position: absolute;
+    width: 170px;
+    height: 170px;
+    top: -90px;
+    right: -65px;
+    border-radius: 50%;
+    background: #e8f0f9;
+}
+
+.curriculum-highlight-icon {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #0b3c7b;
+    border-radius: 14px;
+
+    color: #ffffff;
+}
+
+.curriculum-highlight-icon svg {
+    width: 27px;
+    height: 27px;
+
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.7;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.curriculum-highlight > span {
+    position: relative;
+    margin-bottom: 8px;
+
+    color: #8a99a8;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.curriculum-highlight > strong {
+    position: relative;
+
+    color: #102a43;
+    font-size: 29px;
+    line-height: 1.15;
+    letter-spacing: -0.7px;
+}
+
+.curriculum-highlight > p {
+    position: relative;
+
+    margin: 13px 0 0;
+
+    color: #718397;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   PRINCIPLES
+   ========================= */
+
+.curriculum-principles {
+    padding: 90px 0 100px;
+    background: #f7f9fc;
+}
+
+.curriculum-section-heading {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 50px;
+
+    margin-bottom: 48px;
+}
+
+.curriculum-section-heading h2 {
+    max-width: 600px;
+    margin: 0;
+
+    color: #102a43;
+    font-size: clamp(29px, 4vw, 42px);
+    line-height: 1.15;
+    letter-spacing: -1px;
+}
+
+.curriculum-section-heading > p {
+    max-width: 470px;
+    margin: 0;
+
+    color: #687c90;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+
+/* =========================
+   PRINCIPLE GRID
+   ========================= */
+
+.curriculum-principle-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.curriculum-card {
+    position: relative;
+
+    padding: 30px;
+
+    background: #ffffff;
+    border: 1px solid #e4eaf1;
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.curriculum-card:hover {
+    transform: translateY(-5px);
+
+    border-color: #d4dfeb;
+
+    box-shadow:
+        0 16px 38px rgba(7, 27, 51, 0.08);
+}
+
+.curriculum-card-number {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+
+    color: #c2ccd6;
+
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.curriculum-card-icon {
+    width: 52px;
+    height: 52px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 25px;
+
+    background: #edf4fc;
+    color: #0b3c7b;
+
+    border-radius: 13px;
+
+    transition:
+        background 0.25s ease,
+        color 0.25s ease;
+}
+
+.curriculum-card-icon svg {
+    width: 26px;
+    height: 26px;
+
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.7;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.curriculum-card:hover .curriculum-card-icon {
+    background: #0b3c7b;
+    color: #ffffff;
+}
+
+.curriculum-card h3 {
+    margin: 0 0 13px;
+
+    color: #102a43;
+
+    font-size: 18px;
+    line-height: 1.4;
+    letter-spacing: -0.2px;
+}
+
+.curriculum-card p {
+    margin: 0;
+
+    color: #718397;
+
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+
+/* =========================
+   INDUSTRY
+   ========================= */
+
+.curriculum-industry {
+    padding: 100px 0;
+    background: #ffffff;
+}
+
+.industry-grid {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 90px;
+    align-items: center;
+}
+
+
+/* VISUAL */
+
+.industry-visual {
+    position: relative;
+
+    min-height: 390px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #f5f8fc;
+    border: 1px solid #e4eaf1;
+    border-radius: 24px;
+
+    overflow: hidden;
+}
+
+.industry-visual::before {
+    content: "";
+    position: absolute;
+
+    width: 290px;
+    height: 290px;
+
+    border: 1px solid #dce6f0;
+    border-radius: 50%;
+}
+
+.industry-visual::after {
+    content: "";
+    position: absolute;
+
+    width: 190px;
+    height: 190px;
+
+    border: 1px solid #e4ebf3;
+    border-radius: 50%;
+}
+
+.industry-main-icon {
+    position: relative;
+    z-index: 2;
+
+    width: 125px;
+    height: 125px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #0b3c7b;
+    color: #ffffff;
+
+    border-radius: 30px;
+
+    box-shadow:
+        0 20px 45px rgba(11, 60, 123, 0.22);
+}
+
+.industry-main-icon svg {
+    width: 62px;
+    height: 62px;
+
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.35;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.industry-small-card {
+    position: absolute;
+    z-index: 3;
+
+    right: 25px;
+    bottom: 25px;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 17px 20px;
+
+    background: #ffffff;
+
+    border: 1px solid #e1e8f0;
+    border-radius: 13px;
+
+    box-shadow:
+        0 12px 30px rgba(7, 27, 51, 0.08);
+}
+
+.industry-small-card strong {
+    color: #0b3c7b;
+
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+.industry-small-card span {
+    margin-top: 4px;
+
+    color: #7a8b9c;
+
+    font-size: 10px;
+}
+
+
+/* CONTENT */
+
+.industry-content h2 {
+    max-width: 600px;
+
+    margin: 0 0 20px;
+
+    color: #102a43;
+
+    font-size: clamp(30px, 4vw, 44px);
+    line-height: 1.15;
+    letter-spacing: -1px;
+}
+
+.industry-content > p {
+    max-width: 650px;
+
+    margin: 0 0 28px;
+
+    color: #687c90;
+
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+
+/* POINTS */
+
+.industry-points {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+.industry-point {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+}
+
+.industry-check {
+    flex: 0 0 auto;
+
+    width: 25px;
+    height: 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 2px;
+
+    background: #edf4fc;
+    color: #0b3c7b;
+
+    border-radius: 50%;
+
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.industry-point div:last-child {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.industry-point strong {
+    color: #102a43;
+
+    font-size: 14px;
+}
+
+.industry-point span {
+    color: #7a8b9c;
+
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   CLOSING
+   ========================= */
+
+.curriculum-closing {
+    padding: 95px 0;
+    background: #f7f9fc;
+}
+
+.curriculum-closing-inner {
+    max-width: 820px;
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.curriculum-closing-inner h2 {
+    margin: 0 auto 20px;
+
+    color: #102a43;
+
+    font-size: clamp(30px, 4vw, 46px);
+    line-height: 1.18;
+    letter-spacing: -1px;
+}
+
+.curriculum-closing-inner p {
+    max-width: 680px;
+    margin: 0 auto;
+
+    color: #687c90;
+
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   KALENDER AKADEMIK
+   ========================================================= */
+

@@ -1,0 +1,930 @@
+/* =========================================================
+   PRESTASI
+   CSS KHUSUS HALAMAN PRESTASI
+========================================================= */
+
+.prestasi-page {
+    width: 100%;
+    background: #f7f9fc;
+    color: #102a43;
+}
+
+.prestasi-container {
+    width: min(1180px, calc(100% - 40px));
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.prestasi-hero {
+    position: relative;
+    overflow: hidden;
+    padding: 105px 0 110px;
+    background: linear-gradient(135deg, #071b33 0%, #0b3c7b 100%);
+    color: #ffffff;
+}
+
+.prestasi-hero::before {
+    content: "";
+    position: absolute;
+    width: 340px;
+    height: 340px;
+    right: -150px;
+    top: -170px;
+    border: 1px solid rgba(255,255,255,.12);
+    border-radius: 50%;
+}
+
+.prestasi-hero::after {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    right: 120px;
+    bottom: -120px;
+    border: 1px solid rgba(255,255,255,.08);
+    border-radius: 50%;
+}
+
+.prestasi-eyebrow {
+    position: relative;
+    z-index: 1;
+    display: block;
+    margin-bottom: 18px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: rgba(255,255,255,.6);
+}
+
+.prestasi-hero h1 {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: 0 0 22px;
+    font-size: clamp(42px, 6vw, 70px);
+    line-height: 1.04;
+    letter-spacing: -2.5px;
+}
+
+.prestasi-hero p {
+    position: relative;
+    z-index: 1;
+    max-width: 680px;
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.8;
+    color: rgba(255,255,255,.74);
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.prestasi-intro {
+    padding: 95px 0;
+    background: #ffffff;
+}
+
+.prestasi-intro-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 320px;
+    gap: 75px;
+    align-items: center;
+}
+
+.prestasi-section-label {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #0b3c7b;
+}
+
+.prestasi-intro-text h2 {
+    max-width: 700px;
+    margin: 0 0 22px;
+    font-size: clamp(34px, 4vw, 52px);
+    line-height: 1.1;
+    letter-spacing: -1.7px;
+}
+
+.prestasi-intro-text p {
+    max-width: 680px;
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.85;
+    color: #687c90;
+}
+
+
+/* STAT */
+
+.prestasi-stat {
+    position: relative;
+    min-height: 290px;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    overflow: hidden;
+    border-radius: 24px;
+    background: linear-gradient(145deg, #071b33, #0b3c7b);
+    color: #ffffff;
+    box-shadow: 0 18px 45px rgba(7,27,51,.12);
+}
+
+.prestasi-stat::after {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    right: -90px;
+    bottom: -90px;
+    border: 1px solid rgba(255,255,255,.12);
+    border-radius: 50%;
+}
+
+.prestasi-stat-icon {
+    position: absolute;
+    top: 32px;
+    left: 35px;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255,255,255,.15);
+    border-radius: 15px;
+    background: rgba(255,255,255,.07);
+}
+
+.prestasi-stat-icon svg {
+    width: 27px;
+    height: 27px;
+    fill: none;
+    stroke: #ffffff;
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.prestasi-stat > span {
+    margin-bottom: 8px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.7px;
+    color: rgba(255,255,255,.55);
+}
+
+.prestasi-stat strong {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 5px;
+    font-size: 48px;
+    line-height: 1;
+}
+
+.prestasi-stat small {
+    position: relative;
+    z-index: 1;
+    font-size: 13px;
+    color: rgba(255,255,255,.65);
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.prestasi-content {
+    padding: 95px 0;
+    background: #f7f9fc;
+}
+
+.prestasi-heading {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 360px;
+    gap: 60px;
+    align-items: end;
+    margin-bottom: 45px;
+}
+
+.prestasi-heading h2 {
+    margin: 0;
+    font-size: clamp(32px, 4vw, 48px);
+    line-height: 1.1;
+    letter-spacing: -1.5px;
+}
+
+.prestasi-heading p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.8;
+    color: #718397;
+}
+
+
+/* =========================================================
+   GRID
+========================================================= */
+
+.prestasi-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.prestasi-card {
+    overflow: hidden;
+    border: 1px solid #e3e9ef;
+    border-radius: 20px;
+    background: #ffffff;
+    box-shadow: 0 7px 25px rgba(16,42,67,.04);
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.prestasi-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 18px 38px rgba(16,42,67,.09);
+}
+
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.prestasi-image {
+    position: relative;
+    width: 100%;
+    height: 245px;
+    overflow: hidden;
+    background: #e8edf3;
+}
+
+.prestasi-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform .45s ease;
+}
+
+.prestasi-card:hover .prestasi-image img {
+    transform: scale(1.05);
+}
+
+.prestasi-level {
+    position: absolute;
+    left: 17px;
+    bottom: 17px;
+    display: inline-block;
+    padding: 7px 11px;
+    border-radius: 7px;
+    background: rgba(7,27,51,.88);
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: .6px;
+}
+
+
+/* NO IMAGE */
+
+.prestasi-no-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prestasi-no-image svg {
+    width: 48px;
+    height: 48px;
+    fill: none;
+    stroke: #0b3c7b;
+    stroke-width: 1.3;
+}
+
+
+/* =========================================================
+   CARD BODY
+========================================================= */
+
+.prestasi-card-body {
+    padding: 24px;
+}
+
+.prestasi-card-body h3 {
+    margin: 0 0 18px;
+    font-size: 19px;
+    line-height: 1.4;
+    color: #102a43;
+}
+
+
+/* ORGANIZER */
+
+.prestasi-organizer {
+    display: flex;
+    align-items: flex-start;
+    gap: 11px;
+    padding: 14px 0;
+    border-top: 1px solid #edf0f3;
+    border-bottom: 1px solid #edf0f3;
+}
+
+.prestasi-organizer svg {
+    flex: 0 0 auto;
+    width: 19px;
+    height: 19px;
+    margin-top: 2px;
+    fill: none;
+    stroke: #0b3c7b;
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.prestasi-organizer span {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #9aa8b5;
+}
+
+.prestasi-organizer strong {
+    display: block;
+    font-size: 13px;
+    line-height: 1.45;
+    font-weight: 600;
+    color: #52697e;
+    word-break: break-word;
+}
+
+.prestasi-description {
+    margin: 16px 0 0;
+    font-size: 13px;
+    line-height: 1.75;
+    color: #718397;
+}
+
+
+/* =========================================================
+   EMPTY
+========================================================= */
+
+.prestasi-empty {
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px dashed #d5dde5;
+    border-radius: 20px;
+    background: #ffffff;
+}
+
+.prestasi-empty svg {
+    width: 45px;
+    height: 45px;
+    margin-bottom: 15px;
+    fill: none;
+    stroke: #0b3c7b;
+    stroke-width: 1.4;
+}
+
+.prestasi-empty h3 {
+    margin: 0 0 7px;
+    font-size: 19px;
+}
+
+.prestasi-empty p {
+    margin: 0;
+    font-size: 13px;
+    color: #718397;
+}
+
+
+/* =========================================================
+   CLOSING
+========================================================= */
+
+.prestasi-closing {
+    padding: 95px 0;
+    background: #ffffff;
+}
+
+.prestasi-closing-box {
+    position: relative;
+    overflow: hidden;
+    padding: 75px;
+    border-radius: 26px;
+    background: linear-gradient(135deg, #071b33, #0b3c7b);
+    color: #ffffff;
+}
+
+.prestasi-closing-box::after {
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    right: -130px;
+    bottom: -170px;
+    border: 1px solid rgba(255,255,255,.1);
+    border-radius: 50%;
+}
+
+.prestasi-closing-box > * {
+    position: relative;
+    z-index: 1;
+}
+
+.prestasi-closing-box > span {
+    display: block;
+    margin-bottom: 16px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: rgba(255,255,255,.55);
+}
+
+.prestasi-closing-box h2 {
+    max-width: 700px;
+    margin: 0 0 18px;
+    font-size: clamp(34px, 4vw, 50px);
+    line-height: 1.12;
+    letter-spacing: -1.5px;
+}
+
+.prestasi-closing-box p {
+    max-width: 650px;
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.8;
+    color: rgba(255,255,255,.68);
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+
+
+
+
+
+
+
+
+
+.prestasi-page {
+    background: #f7f9fc;
+    color: #102a43;
+}
+
+
+/* HERO */
+
+.prestasi-page .prestasi-hero {
+    position: relative;
+    overflow: hidden;
+    padding: 100px 0 105px;
+    background: linear-gradient(135deg, #071b33, #0b3c7b);
+    color: #fff;
+}
+
+.prestasi-page .prestasi-hero::after {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    right: -130px;
+    top: -150px;
+    border: 1px solid rgba(255,255,255,.12);
+    border-radius: 50%;
+}
+
+.prestasi-page .prestasi-hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+.prestasi-page .prestasi-label {
+    display: block;
+    margin-bottom: 18px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: rgba(255,255,255,.6);
+}
+
+.prestasi-page .prestasi-hero h1 {
+    max-width: 800px;
+    margin: 0 0 20px;
+    font-size: clamp(42px, 6vw, 68px);
+    line-height: 1.05;
+    letter-spacing: -2px;
+}
+
+.prestasi-page .prestasi-hero p {
+    max-width: 680px;
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.8;
+    color: rgba(255,255,255,.72);
+}
+
+
+/* INTRO */
+
+.prestasi-page .prestasi-intro {
+    padding: 90px 0;
+    background: #fff;
+}
+
+.prestasi-page .prestasi-intro-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 70px;
+    align-items: center;
+}
+
+.prestasi-page .prestasi-intro-content > span {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #0b3c7b;
+}
+
+.prestasi-page .prestasi-intro-content h2 {
+    max-width: 650px;
+    margin: 0 0 22px;
+    font-size: clamp(34px, 4vw, 50px);
+    line-height: 1.12;
+    letter-spacing: -1.5px;
+}
+
+.prestasi-page .prestasi-intro-content p {
+    max-width: 680px;
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.85;
+    color: #687c90;
+}
+
+
+/* INTRO BOX */
+
+.prestasi-page .prestasi-intro-box {
+    position: relative;
+    min-height: 290px;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    overflow: hidden;
+    border-radius: 24px;
+    background: linear-gradient(145deg, #071b33, #0b3c7b);
+    color: #fff;
+}
+
+.prestasi-page .prestasi-intro-icon {
+    position: absolute;
+    top: 32px;
+    left: 35px;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255,255,255,.15);
+    border-radius: 15px;
+    background: rgba(255,255,255,.07);
+}
+
+.prestasi-page .prestasi-intro-icon svg {
+    width: 27px;
+    height: 27px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.prestasi-page .prestasi-intro-box > span {
+    margin-bottom: 8px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.7px;
+    color: rgba(255,255,255,.55);
+}
+
+.prestasi-page .prestasi-intro-box strong {
+    margin-bottom: 4px;
+    font-size: 46px;
+    line-height: 1;
+}
+
+.prestasi-page .prestasi-intro-box p {
+    margin: 0;
+    font-size: 13px;
+    color: rgba(255,255,255,.65);
+}
+
+
+/* LIST */
+
+.prestasi-page .prestasi-list {
+    padding: 90px 0;
+    background: #f7f9fc;
+}
+
+.prestasi-page .prestasi-heading {
+    display: grid;
+    grid-template-columns: 1fr 360px;
+    gap: 60px;
+    align-items: end;
+    margin-bottom: 42px;
+}
+
+.prestasi-page .prestasi-heading span {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #0b3c7b;
+}
+
+.prestasi-page .prestasi-heading h2 {
+    margin: 0;
+    font-size: clamp(32px, 4vw, 46px);
+    line-height: 1.1;
+    letter-spacing: -1.3px;
+}
+
+.prestasi-page .prestasi-heading p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.8;
+    color: #718397;
+}
+
+
+/* GRID */
+
+.prestasi-page .prestasi-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+
+/* CARD */
+
+.prestasi-page .prestasi-card {
+    overflow: hidden;
+    border: 1px solid #e4e9ee;
+    border-radius: 18px;
+    background: #fff;
+    box-shadow: 0 6px 22px rgba(16,42,67,.035);
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.prestasi-page .prestasi-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 35px rgba(16,42,67,.09);
+}
+
+
+/* PHOTO */
+
+.prestasi-page .prestasi-photo {
+    position: relative;
+    height: 240px;
+    overflow: hidden;
+    background: #e8edf3;
+}
+
+.prestasi-page .prestasi-photo img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform .45s ease;
+}
+
+.prestasi-page .prestasi-card:hover .prestasi-photo img {
+    transform: scale(1.04);
+}
+
+.prestasi-page .prestasi-photo > span {
+    position: absolute;
+    left: 18px;
+    bottom: 18px;
+    padding: 7px 11px;
+    border-radius: 7px;
+    background: rgba(7,27,51,.85);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: .6px;
+    color: #fff;
+}
+
+
+/* EMPTY PHOTO */
+
+.prestasi-page .prestasi-photo-empty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prestasi-page .prestasi-photo-empty svg {
+    width: 48px;
+    height: 48px;
+    fill: none;
+    stroke: #0b3c7b;
+    stroke-width: 1.3;
+}
+
+.prestasi-page .prestasi-photo-empty > span {
+    position: absolute;
+    left: 18px;
+    bottom: 18px;
+    padding: 7px 11px;
+    border-radius: 7px;
+    background: #0b3c7b;
+    font-size: 10px;
+    font-weight: 700;
+    color: #fff;
+}
+
+
+/* CARD BODY */
+
+.prestasi-page .prestasi-card-body {
+    padding: 23px;
+}
+
+.prestasi-page .prestasi-card-body h3 {
+    margin: 0 0 18px;
+    font-size: 19px;
+    line-height: 1.4;
+    color: #102a43;
+}
+
+
+/* ORGANIZER */
+
+.prestasi-page .prestasi-organizer {
+    display: flex;
+    gap: 11px;
+    padding: 14px 0;
+    border-top: 1px solid #edf0f3;
+    border-bottom: 1px solid #edf0f3;
+}
+
+.prestasi-page .prestasi-organizer svg {
+    flex: 0 0 auto;
+    width: 19px;
+    height: 19px;
+    fill: none;
+    stroke: #0b3c7b;
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.prestasi-page .prestasi-organizer small {
+    display: block;
+    margin-bottom: 3px;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #9aa8b5;
+}
+
+.prestasi-page .prestasi-organizer strong {
+    display: block;
+    font-size: 13px;
+    line-height: 1.45;
+    font-weight: 600;
+    color: #52697e;
+}
+
+.prestasi-page .prestasi-description {
+    margin: 16px 0 0;
+    font-size: 13px;
+    line-height: 1.75;
+    color: #718397;
+}
+
+
+/* EMPTY */
+
+.prestasi-page .prestasi-empty {
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px dashed #d5dde5;
+    border-radius: 20px;
+    background: #fff;
+}
+
+.prestasi-page .prestasi-empty svg {
+    width: 45px;
+    height: 45px;
+    margin-bottom: 15px;
+    fill: none;
+    stroke: #0b3c7b;
+    stroke-width: 1.4;
+}
+
+.prestasi-page .prestasi-empty h3 {
+    margin: 0 0 6px;
+    font-size: 19px;
+}
+
+.prestasi-page .prestasi-empty p {
+    margin: 0;
+    font-size: 13px;
+    color: #718397;
+}
+
+
+/* CLOSING */
+
+.prestasi-page .prestasi-closing {
+    padding: 90px 0;
+    background: #fff;
+}
+
+.prestasi-page .prestasi-closing-box {
+    padding: 70px;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #071b33, #0b3c7b);
+    color: #fff;
+}
+
+.prestasi-page .prestasi-closing-box > span {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: rgba(255,255,255,.55);
+}
+
+.prestasi-page .prestasi-closing-box h2 {
+    max-width: 700px;
+    margin: 0 0 18px;
+    font-size: clamp(34px, 4vw, 50px);
+    line-height: 1.12;
+    letter-spacing: -1.5px;
+}
+
+.prestasi-page .prestasi-closing-box p {
+    max-width: 650px;
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.8;
+    color: rgba(255,255,255,.68);
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+
+
+
+
+
+
+
+
+

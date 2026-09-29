@@ -1,0 +1,368 @@
+.teacher-page {
+    background: #f8f9fb;
+}
+
+
+/* =========================================
+   HERO
+   ========================================= */
+
+.teacher-hero {
+    background:
+        linear-gradient(135deg, #071b33 0%, #0b3c7b 100%);
+    color: white;
+    padding: 75px 0 80px;
+}
+
+.teacher-hero .container {
+    padding: 0;
+}
+
+.teacher-label {
+    display: inline-block;
+    color: #8db9e8;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 14px;
+}
+
+.teacher-hero h1 {
+    font-size: 42px;
+    line-height: 1.15;
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+
+.teacher-hero p {
+    max-width: 680px;
+    color: #c8d7e8;
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+
+/* =========================================
+   INTRO
+   ========================================= */
+
+.teacher-intro {
+    background: #ffffff;
+    padding: 65px 0;
+}
+
+.teacher-intro-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 0.8fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.teacher-intro-text > span,
+.teacher-list-heading span {
+    display: block;
+    color: #0b3c7b;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.teacher-intro-text h2 {
+    color: #102a43;
+    font-size: 32px;
+    line-height: 1.25;
+    margin: 0 0 15px;
+}
+
+.teacher-intro-text p {
+    max-width: 650px;
+    color: #718096;
+    font-size: 14px;
+    line-height: 1.85;
+    margin: 0;
+}
+
+
+/* =========================================
+   STATISTIK
+   ========================================= */
+
+.teacher-stat {
+    background: #f4f7fb;
+    border: 1px solid #e3eaf2;
+    border-radius: 14px;
+
+    padding: 30px;
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.teacher-stat-number {
+    color: #0b3c7b;
+    font-size: 48px;
+    line-height: 1;
+    font-weight: 700;
+}
+
+.teacher-stat-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.teacher-stat-info strong {
+    color: #102a43;
+    font-size: 15px;
+}
+
+.teacher-stat-info span {
+    color: #8291a2;
+    font-size: 12px;
+}
+
+
+/* =========================================
+   DAFTAR GURU
+   ========================================= */
+
+.teacher-list-section {
+    padding: 75px 0 90px;
+}
+
+.teacher-list-heading {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+
+    align-items: end;
+    margin-bottom: 45px;
+}
+
+.teacher-list-heading h2 {
+    color: #102a43;
+    font-size: 31px;
+    line-height: 1.3;
+    margin: 0;
+}
+
+.teacher-list-heading > p {
+    color: #718096;
+    font-size: 14px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+
+/* =========================================
+   GRID GURU
+   ========================================= */
+
+.teacher-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+
+/* =========================================
+   CARD GURU
+   ========================================= */
+
+.teacher-card {
+    background: #ffffff;
+    border: 1px solid #e4eaf1;
+    border-radius: 13px;
+    overflow: hidden;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.teacher-card:hover {
+    transform: translateY(-5px);
+    border-color: #cddbea;
+    box-shadow: 0 14px 35px rgba(16, 42, 67, 0.09);
+}
+
+
+/* =========================================
+   FOTO
+   ========================================= */
+
+.teacher-photo {
+    height: 280px;
+    position: relative;
+    overflow: hidden;
+    background: #eef2f6;
+}
+
+.teacher-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    display: block;
+
+    transition: transform 0.4s ease;
+}
+
+.teacher-card:hover .teacher-photo img {
+    transform: scale(1.04);
+}
+
+.teacher-photo-overlay {
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(7, 27, 51, 0.22),
+            transparent 45%
+        );
+
+    pointer-events: none;
+}
+
+
+/* =========================================
+   INFORMASI GURU
+   ========================================= */
+
+.teacher-info {
+    padding: 20px 20px 22px;
+}
+
+.teacher-role {
+    display: block;
+
+    color: #0b3c7b;
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+
+    margin-bottom: 8px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.teacher-info h3 {
+    color: #102a43;
+    font-size: 16px;
+    line-height: 1.4;
+
+    margin: 0 0 16px;
+
+    min-height: 45px;
+}
+
+
+/* =========================================
+   NIP
+   ========================================= */
+
+.teacher-nip {
+    border-top: 1px solid #edf1f5;
+
+    padding-top: 12px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.teacher-nip span {
+    color: #98a6b5;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.teacher-nip strong {
+    color: #68798b;
+    font-size: 11px;
+    font-weight: 500;
+
+    word-break: break-all;
+}
+
+
+/* =========================================
+   EMPTY STATE
+   ========================================= */
+
+.teacher-empty {
+    grid-column: 1 / -1;
+
+    background: #ffffff;
+    border: 1px dashed #d5dfe9;
+    border-radius: 12px;
+
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.empty-icon {
+    width: 55px;
+    height: 55px;
+
+    margin: 0 auto 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    background: #f0f4f8;
+
+    color: #0b3c7b;
+    font-size: 25px;
+}
+
+.teacher-empty h3 {
+    color: #34495e;
+    font-size: 18px;
+    margin: 0 0 7px;
+}
+
+.teacher-empty p {
+    color: #8795a5;
+    font-size: 13px;
+    margin: 0;
+}
+
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+
+
+
+/* =========================================
+   TABLET KECIL
+   ========================================= */
+
+
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+
+
+/* =========================================================
+   FASILITAS SEKOLAH
+   ========================================================= */
+

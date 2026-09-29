@@ -1,0 +1,540 @@
+.osis-page {
+    background: #ffffff;
+    color: #102a43;
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.osis-hero {
+    position: relative;
+    padding: 100px 0 95px;
+    background: linear-gradient(
+        135deg,
+        #071b33 0%,
+        #0b3c7b 100%
+    );
+    overflow: hidden;
+}
+
+.osis-hero::before {
+    content: "";
+    position: absolute;
+    width: 430px;
+    height: 430px;
+    top: -240px;
+    right: -100px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.035);
+}
+
+.osis-hero::after {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    bottom: -210px;
+    left: 7%;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 50%;
+}
+
+.osis-hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+.osis-label {
+    display: inline-block;
+    margin-bottom: 18px;
+    color: #b9d5f5;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.osis-hero h1 {
+    margin: 0;
+    color: #ffffff;
+    font-size: clamp(38px, 5vw, 64px);
+    line-height: 1.08;
+    font-weight: 700;
+    letter-spacing: -1.5px;
+}
+
+.osis-hero p {
+    max-width: 730px;
+    margin: 22px 0 0;
+    color: rgba(255, 255, 255, 0.78);
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   INTRO
+   ========================================================= */
+
+.osis-intro {
+    padding: 90px 0;
+    background: #ffffff;
+}
+
+.osis-intro-grid {
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 75px;
+    align-items: center;
+}
+
+.osis-intro-text > span,
+.osis-section-heading > div > span,
+.osis-role-heading > span,
+.osis-closing-inner > span {
+    display: block;
+    margin-bottom: 13px;
+    color: #0b3c7b;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+}
+
+.osis-intro-text h2 {
+    max-width: 680px;
+    margin: 0 0 22px;
+    color: #102a43;
+    font-size: clamp(30px, 4vw, 44px);
+    line-height: 1.15;
+    letter-spacing: -1px;
+}
+
+.osis-intro-text p {
+    max-width: 720px;
+    margin: 0 0 14px;
+    color: #60758a;
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+.osis-intro-text p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   HIGHLIGHT
+   ========================================================= */
+
+.osis-highlight {
+    position: relative;
+    min-height: 270px;
+    padding: 34px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background: #f5f8fc;
+    border: 1px solid #e3eaf2;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.osis-highlight::before {
+    content: "";
+    position: absolute;
+    width: 170px;
+    height: 170px;
+    top: -90px;
+    right: -65px;
+    border-radius: 50%;
+    background: #e8f0f9;
+}
+
+.osis-highlight-icon {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0b3c7b;
+    color: #ffffff;
+    border-radius: 14px;
+}
+
+.osis-highlight-icon svg {
+    width: 27px;
+    height: 27px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.7;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.osis-highlight > span {
+    position: relative;
+    margin-bottom: 8px;
+    color: #8a99a8;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.osis-highlight > strong {
+    position: relative;
+    color: #102a43;
+    font-size: 31px;
+    line-height: 1.1;
+    letter-spacing: -0.7px;
+}
+
+.osis-highlight > p {
+    position: relative;
+    margin: 13px 0 0;
+    color: #718397;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   ORGANIZATION SECTION
+   ========================================================= */
+
+.osis-organization-section {
+    padding: 90px 0 100px;
+    background: #f7f9fc;
+}
+
+.osis-section-heading {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 50px;
+    margin-bottom: 45px;
+}
+
+.osis-section-heading h2 {
+    margin: 0;
+    color: #102a43;
+    font-size: clamp(29px, 4vw, 42px);
+    line-height: 1.15;
+    letter-spacing: -1px;
+}
+
+.osis-section-heading > p {
+    max-width: 470px;
+    margin: 0;
+    color: #687c90;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   ORGANIZATION GRID
+   ========================================================= */
+
+.osis-organization-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+
+/* =========================================================
+   ORGANIZATION CARD
+   ========================================================= */
+
+.osis-organization-card {
+    padding: 32px;
+    background: #ffffff;
+    border: 1px solid #e4eaf1;
+    border-radius: 18px;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.osis-organization-card:hover {
+    transform: translateY(-5px);
+    border-color: #d4dfeb;
+    box-shadow: 0 16px 38px rgba(7, 27, 51, 0.08);
+}
+
+.osis-organization-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.osis-organization-top > span {
+    color: #c2ccd6;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.osis-organization-icon {
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #edf4fc;
+    color: #0b3c7b;
+    border-radius: 14px;
+    transition:
+        background 0.25s ease,
+        color 0.25s ease;
+}
+
+.osis-organization-icon svg {
+    width: 28px;
+    height: 28px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.7;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.osis-organization-card:hover .osis-organization-icon {
+    background: #0b3c7b;
+    color: #ffffff;
+}
+
+.osis-organization-card h3 {
+    margin: 0 0 5px;
+    color: #102a43;
+    font-size: 26px;
+    line-height: 1.2;
+}
+
+.osis-card-subtitle {
+    margin-bottom: 18px;
+    color: #0b3c7b;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+}
+
+.osis-organization-card > p {
+    margin: 0;
+    color: #718397;
+    font-size: 14px;
+    line-height: 1.85;
+}
+
+
+/* =========================================================
+   ROLE LIST
+   ========================================================= */
+
+.osis-role-list {
+    margin-top: 27px;
+    border-top: 1px solid #edf1f5;
+}
+
+.osis-role-item {
+    display: grid;
+    grid-template-columns: 35px 1fr;
+    gap: 12px;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #edf1f5;
+}
+
+.osis-role-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.osis-role-item span {
+    color: #0b3c7b;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.osis-role-item p {
+    margin: 0;
+    color: #60758a;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   ROLE SECTION
+   ========================================================= */
+
+.osis-role-section {
+    padding: 100px 0;
+    background: #ffffff;
+}
+
+.osis-role-heading {
+    max-width: 720px;
+    margin-bottom: 45px;
+}
+
+.osis-role-heading h2 {
+    margin: 0 0 18px;
+    color: #102a43;
+    font-size: clamp(30px, 4vw, 44px);
+    line-height: 1.15;
+    letter-spacing: -1px;
+}
+
+.osis-role-heading p {
+    max-width: 680px;
+    margin: 0;
+    color: #687c90;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   ROLE GRID
+   ========================================================= */
+
+.osis-role-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.osis-role-card {
+    position: relative;
+    padding: 28px;
+    background: #ffffff;
+    border: 1px solid #e4eaf1;
+    border-radius: 18px;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.osis-role-card:hover {
+    transform: translateY(-5px);
+    border-color: #d4dfeb;
+    box-shadow: 0 16px 38px rgba(7, 27, 51, 0.08);
+}
+
+.osis-role-icon {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 22px;
+    background: #edf4fc;
+    color: #0b3c7b;
+    border-radius: 13px;
+    transition:
+        background 0.25s ease,
+        color 0.25s ease;
+}
+
+.osis-role-icon svg {
+    width: 26px;
+    height: 26px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.7;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.osis-role-card:hover .osis-role-icon {
+    background: #0b3c7b;
+    color: #ffffff;
+}
+
+.osis-role-card > span {
+    position: absolute;
+    top: 27px;
+    right: 25px;
+    color: #c2ccd6;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.osis-role-card h3 {
+    margin: 0 0 12px;
+    color: #102a43;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.osis-role-card p {
+    margin: 0;
+    color: #718397;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   CLOSING
+   ========================================================= */
+
+.osis-closing {
+    padding: 95px 0;
+    background: #f7f9fc;
+}
+
+.osis-closing-inner {
+    max-width: 820px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.osis-closing-inner h2 {
+    max-width: 720px;
+    margin: 0 auto 20px;
+    color: #102a43;
+    font-size: clamp(30px, 4vw, 46px);
+    line-height: 1.18;
+    letter-spacing: -1px;
+}
+
+.osis-closing-inner p {
+    max-width: 680px;
+    margin: 0 auto;
+    color: #687c90;
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   GALERI
+========================================================= */
+

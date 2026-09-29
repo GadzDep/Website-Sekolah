@@ -1,0 +1,369 @@
+.history-page {
+    background: #f8f9fb;
+}
+
+/* =========================================
+   HERO SEJARAH
+   ========================================= */
+
+.history-hero {
+    background:
+        linear-gradient(135deg, #071b33 0%, #0b3c7b 100%);
+    color: white;
+    padding: 75px 0 80px;
+}
+
+.history-hero .container {
+    padding: 0;
+}
+
+.history-label {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #8db9e8;
+    margin-bottom: 14px;
+}
+
+.history-hero h1 {
+    font-size: 42px;
+    line-height: 1.15;
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+
+.history-hero p {
+    max-width: 650px;
+    color: #c8d7e8;
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+
+/* =========================================
+   INTRO
+   ========================================= */
+
+.history-intro {
+    background: #ffffff;
+    padding: 70px 0;
+}
+
+.intro-grid {
+    display: grid;
+    grid-template-columns: 0.9fr 1.4fr;
+    gap: 80px;
+    align-items: start;
+}
+
+.intro-title span,
+.history-heading span {
+    display: block;
+    color: #0b3c7b;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.intro-title h2 {
+    color: #102a43;
+    font-size: 31px;
+    line-height: 1.3;
+    margin: 0;
+}
+
+.intro-text {
+    border-left: 3px solid #dce8f5;
+    padding-left: 30px;
+}
+
+.intro-text p {
+    color: #617083;
+    font-size: 15px;
+    line-height: 1.9;
+    margin: 0 0 18px;
+}
+
+.intro-text p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================================
+   HEADING TIMELINE
+   ========================================= */
+
+.history-timeline-section {
+    padding: 75px 0 90px;
+}
+
+.history-heading {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.history-heading h2 {
+    color: #102a43;
+    font-size: 31px;
+    margin: 0 0 10px;
+}
+
+.history-heading p {
+    color: #718096;
+    font-size: 14px;
+    margin: 0;
+}
+
+
+/* =========================================
+   TIMELINE
+   ========================================= */
+
+.history-timeline {
+    position: relative;
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+/* Garis tengah */
+.history-timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    background: #dbe5ef;
+    transform: translateX(-50%);
+}
+
+
+/* =========================================
+   TIMELINE ITEM
+   ========================================= */
+
+.timeline-item {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 70px 1fr;
+    align-items: start;
+    margin-bottom: 50px;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+
+/* Tahun */
+.timeline-year {
+    color: #0b3c7b;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: right;
+    padding: 25px 35px 0 0;
+}
+
+
+/* Titik timeline */
+.timeline-dot {
+    width: 14px;
+    height: 14px;
+    background: #ffffff;
+    border: 4px solid #0b3c7b;
+    border-radius: 50%;
+    justify-self: center;
+    margin-top: 28px;
+    z-index: 2;
+}
+
+
+/* Kartu */
+.timeline-card {
+    background: #ffffff;
+    border: 1px solid #e7edf4;
+    border-radius: 12px;
+    padding: 28px 30px;
+    box-shadow: 0 5px 20px rgba(16, 42, 67, 0.05);
+    position: relative;
+}
+
+.timeline-number {
+    display: block;
+    color: #9eb5cb;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 7px;
+}
+
+.timeline-card h3 {
+    color: #102a43;
+    font-size: 19px;
+    margin: 0 0 14px;
+}
+
+.timeline-card p {
+    color: #66778a;
+    font-size: 13.5px;
+    line-height: 1.85;
+    margin: 0 0 13px;
+}
+
+.timeline-card p:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-card strong {
+    color: #34495e;
+}
+
+
+/* =========================================
+   HIGHLIGHT CARD
+   ========================================= */
+
+.timeline-highlight {
+    background:
+        linear-gradient(145deg, #0b3c7b, #071b33);
+    border: none;
+    color: white;
+    overflow: hidden;
+}
+
+.timeline-highlight::before {
+    content: '';
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,0.08);
+    right: -70px;
+    top: -70px;
+}
+
+.timeline-highlight .timeline-number {
+    color: #8db9e8;
+}
+
+.timeline-highlight h3 {
+    color: white;
+}
+
+.timeline-highlight p {
+    color: #c8d7e8;
+}
+
+.timeline-highlight strong {
+    color: white;
+}
+
+.highlight-icon {
+    position: absolute;
+    top: 25px;
+    right: 28px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 15px;
+}
+
+
+/* =========================================
+   CLOSING SECTION
+   ========================================= */
+
+.history-closing {
+    padding: 0 0 80px;
+}
+
+.closing-box {
+    background: #ffffff;
+    border: 1px solid #e5ebf2;
+    border-radius: 16px;
+    padding: 50px 55px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+
+    box-shadow: 0 8px 30px rgba(16, 42, 67, 0.05);
+}
+
+.closing-content {
+    max-width: 700px;
+}
+
+.closing-content > span {
+    display: block;
+    color: #0b3c7b;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.closing-content h2 {
+    color: #102a43;
+    font-size: 29px;
+    line-height: 1.3;
+    margin: 0 0 15px;
+}
+
+.closing-content p {
+    color: #6b7c8f;
+    font-size: 13.5px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+.closing-year {
+    min-width: 150px;
+    text-align: center;
+    border-left: 1px solid #e5ebf2;
+    padding-left: 40px;
+}
+
+.closing-year strong {
+    display: block;
+    color: #0b3c7b;
+    font-size: 48px;
+    line-height: 1;
+}
+
+.closing-year span {
+    display: block;
+    color: #8a9aab;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-top: 8px;
+}
+
+
+/* =========================================
+   RESPONSIVE TABLET
+   ========================================= */
+
+
+
+
+/* =========================================
+   RESPONSIVE MOBILE
+   ========================================= */
+
+
+
+/* =========================================
+   HALAMAN VISI & MISI
+   ========================================= */
+

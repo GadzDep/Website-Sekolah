@@ -1,0 +1,634 @@
+/* =========================================================
+   INFORMASI PAGE
+   CSS KHUSUS HALAMAN INFORMASI
+   ========================================================= */
+
+.informasi-page {
+    background: #f7f9fc;
+    color: #102a43;
+    min-height: 100vh;
+}
+
+.informasi-page *,
+.informasi-page *::before,
+.informasi-page *::after {
+    box-sizing: border-box;
+}
+
+.informasi-container {
+    width: min(1180px, calc(100% - 48px));
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.informasi-hero {
+    position: relative;
+    overflow: hidden;
+    background:
+        radial-gradient(
+            circle at 80% 20%,
+            rgba(63, 125, 190, 0.22),
+            transparent 32%
+        ),
+        linear-gradient(
+            135deg,
+            #071b33 0%,
+            #0b3c7b 100%
+        );
+    color: #ffffff;
+    min-height: 410px;
+    display: flex;
+    align-items: center;
+}
+
+.informasi-hero .informasi-container {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    align-items: center;
+    gap: 50px;
+    padding: 70px 0;
+}
+
+.informasi-hero-content {
+    max-width: 690px;
+}
+
+.informasi-eyebrow,
+.informasi-label {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2.2px;
+    text-transform: uppercase;
+}
+
+.informasi-eyebrow {
+    margin-bottom: 18px;
+    color: #9fc4e8;
+}
+
+.informasi-hero h1 {
+    margin: 0;
+    font-size: clamp(42px, 5vw, 68px);
+    line-height: 1.03;
+    letter-spacing: -2.8px;
+    font-weight: 800;
+}
+
+.informasi-hero h1 span {
+    color: #8eb9e2;
+}
+
+.informasi-hero p {
+    max-width: 570px;
+    margin: 25px 0 0;
+    color: rgba(255, 255, 255, 0.72);
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+
+/* Hero decoration */
+
+.informasi-hero-decoration {
+    position: relative;
+    height: 270px;
+}
+
+.info-circle {
+    position: absolute;
+    border: 1px solid rgba(255, 255, 255, 0.13);
+    border-radius: 50%;
+}
+
+.info-circle-one {
+    width: 300px;
+    height: 300px;
+    top: -10px;
+    right: 10px;
+}
+
+.info-circle-two {
+    width: 210px;
+    height: 210px;
+    top: 35px;
+    right: 55px;
+}
+
+.info-circle-three {
+    width: 120px;
+    height: 120px;
+    top: 80px;
+    right: 100px;
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.info-hero-card {
+    position: absolute;
+    z-index: 3;
+    top: 57px;
+    right: 125px;
+    width: 170px;
+    min-height: 170px;
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 22px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.18);
+}
+
+.info-hero-card span {
+    color: #9fc4e8;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.info-hero-card strong {
+    font-size: 22px;
+    line-height: 1.2;
+}
+
+.info-hero-card small {
+    color: rgba(255, 255, 255, 0.55);
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   GENERAL SECTION
+   ========================================================= */
+
+.informasi-section {
+    padding: 90px 0;
+}
+
+.informasi-announcement {
+    background: #ffffff;
+}
+
+.informasi-news {
+    background: #f7f9fc;
+}
+
+.informasi-agenda {
+    background: #ffffff;
+}
+
+.informasi-section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 40px;
+    margin-bottom: 42px;
+}
+
+.informasi-label {
+    color: #477aa8;
+    margin-bottom: 10px;
+}
+
+.informasi-section-heading h2 {
+    margin: 0;
+    color: #102a43;
+    font-size: clamp(30px, 4vw, 44px);
+    line-height: 1.1;
+    letter-spacing: -1.5px;
+}
+
+.informasi-section-heading p {
+    max-width: 580px;
+    margin: 14px 0 0;
+    color: #687c90;
+    font-size: 15px;
+    line-height: 1.75;
+}
+
+.informasi-heading-line {
+    width: 110px;
+    height: 3px;
+    flex-shrink: 0;
+    margin-bottom: 10px;
+    background: #0b3c7b;
+}
+
+
+/* =========================================================
+   PENGUMUMAN
+   ========================================================= */
+
+.informasi-announcement-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.informasi-announcement-card {
+    position: relative;
+    padding: 30px;
+    border: 1px solid #e4eaf0;
+    border-radius: 18px;
+    background: #ffffff;
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.informasi-announcement-card:hover {
+    transform: translateY(-5px);
+    border-color: #c8d8e8;
+    box-shadow: 0 18px 45px rgba(16, 42, 67, 0.09);
+}
+
+.informasi-announcement-icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+    color: #0b3c7b;
+    background: #edf4fb;
+}
+
+.informasi-announcement-icon svg {
+    width: 22px;
+    height: 22px;
+}
+
+.informasi-card-date {
+    margin-bottom: 9px;
+    color: #8191a2;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+}
+
+.informasi-announcement-card h3 {
+    margin: 0 0 13px;
+    color: #102a43;
+    font-size: 21px;
+    line-height: 1.35;
+}
+
+.informasi-announcement-card p {
+    margin: 0;
+    color: #687c90;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   BERITA
+   ========================================================= */
+
+.informasi-news-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+}
+
+
+/* Link kartu berita */
+.informasi-news-card-link {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+.informasi-news-card-link:hover {
+    color: inherit;
+}
+
+.informasi-news-card {
+    overflow: hidden;
+    border: 1px solid #e3e9ef;
+    border-radius: 18px;
+    background: #ffffff;
+    box-shadow: 0 8px 25px rgba(16, 42, 67, 0.035);
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.informasi-news-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 45px rgba(16, 42, 67, 0.09);
+}
+
+.informasi-news-image {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    background: #e9eef3;
+}
+
+.informasi-news-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.45s ease;
+}
+
+.informasi-news-card:hover .informasi-news-image img {
+    transform: scale(1.045);
+}
+
+.informasi-news-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    color: #91a0af;
+}
+
+.informasi-news-placeholder svg {
+    width: 42px;
+    height: 42px;
+}
+
+.informasi-news-placeholder span {
+    font-size: 12px;
+}
+
+.informasi-news-content {
+    padding: 25px;
+}
+
+.informasi-news-content h3 {
+    margin: 0 0 12px;
+    color: #102a43;
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+.informasi-news-content p {
+    display: -webkit-box;
+    overflow: hidden;
+    margin: 0;
+    color: #687c90;
+    font-size: 14px;
+    line-height: 1.75;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    line-clamp: 5;
+}
+
+
+/* =========================================================
+   AGENDA
+   ========================================================= */
+
+.informasi-agenda-wrapper {
+    overflow: hidden;
+    border: 1px solid #e2e8ee;
+    border-radius: 18px;
+    background: #ffffff;
+}
+
+.informasi-agenda-header,
+.informasi-agenda-row {
+    display: grid;
+    grid-template-columns:
+        150px
+        minmax(200px, 1.25fr)
+        minmax(150px, 0.8fr)
+        minmax(220px, 1fr);
+}
+
+.informasi-agenda-header {
+    padding: 18px 25px;
+    color: #ffffff;
+    background: #0b3c7b;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+}
+
+.informasi-agenda-row {
+    padding: 24px 25px;
+    align-items: center;
+    border-top: 1px solid #e9edf1;
+    transition: background 0.2s ease;
+}
+
+.informasi-agenda-row:hover {
+    background: #f8fafc;
+}
+
+.informasi-agenda-date {
+    display: flex;
+    flex-direction: column;
+}
+
+.informasi-agenda-date strong {
+    color: #0b3c7b;
+    font-size: 25px;
+    line-height: 1;
+}
+
+.informasi-agenda-date span {
+    margin-top: 5px;
+    color: #8191a2;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.informasi-agenda-title {
+    padding-right: 20px;
+    color: #102a43;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.informasi-agenda-location {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-right: 20px;
+    color: #60758a;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.informasi-agenda-location svg {
+    width: 17px;
+    height: 17px;
+    flex-shrink: 0;
+    color: #0b3c7b;
+}
+
+.informasi-agenda-description {
+    color: #687c90;
+    font-size: 13px;
+    line-height: 1.65;
+}
+
+
+/* =========================================================
+   EMPTY STATE
+   ========================================================= */
+
+.informasi-empty {
+    padding: 55px 25px;
+    text-align: center;
+    border: 1px dashed #ccd6df;
+    border-radius: 18px;
+    background: #fafcfe;
+}
+
+.informasi-empty span {
+    display: block;
+    margin-bottom: 8px;
+    color: #4d6277;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.informasi-empty p {
+    margin: 0;
+    color: #8493a2;
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   CLOSING
+   ========================================================= */
+
+.informasi-closing {
+    padding: 95px 0;
+    color: #ffffff;
+    background:
+        radial-gradient(
+            circle at 85% 50%,
+            rgba(71, 122, 168, 0.3),
+            transparent 30%
+        ),
+        #071b33;
+}
+
+.informasi-closing-inner {
+    max-width: 760px;
+}
+
+.informasi-closing .informasi-label {
+    color: #8eb9e2;
+}
+
+.informasi-closing h2 {
+    margin: 13px 0 18px;
+    font-size: clamp(31px, 4vw, 48px);
+    line-height: 1.15;
+    letter-spacing: -1.5px;
+}
+
+.informasi-closing p {
+    max-width: 620px;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.63);
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+
+
+/* =========================================================
+   DETAIL BERITA - TANPA JAVASCRIPT
+========================================================= */
+.berita-detail-page {
+    background: #ffffff;
+    padding: 80px 0 100px;
+    min-height: 80vh;
+}
+
+.berita-detail-back {
+    display: inline-block;
+    margin-bottom: 28px;
+    color: #0b3c7b;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.berita-detail-date {
+    margin-bottom: 14px;
+    color: #8191a2;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .8px;
+}
+
+.berita-detail-page h1 {
+    max-width: 900px;
+    margin: 0 0 35px;
+    color: #102a43;
+    font-size: 48px;
+    line-height: 1.15;
+    letter-spacing: -1.8px;
+}
+
+.berita-detail-image {
+    width: 100%;
+    max-width: 1000px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 24px;
+    background: #e9eef3;
+    margin-bottom: 38px;
+}
+
+.berita-detail-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.berita-detail-content {
+    max-width: 850px;
+    color: #4f6377;
+    font-size: 17px;
+    line-height: 2;
+}
