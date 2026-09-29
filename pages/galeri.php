@@ -1,54 +1,7 @@
 <?php
+require_once __DIR__ . '/../config/database.php';
 include '../includes/header.php';
-
-$galeri_data = [
-    [
-        'judul_kegiatan' => 'ANGGOTA PASKIBRAKA',
-        'foto' => 'galeri-1.jpg',
-        'deskripsi' => 'Anggota Paskibraka SMK Negeri 1 Bandung.'
-    ],
-    [
-        'judul_kegiatan' => 'JUARA 1 TOURISM QUIZ',
-        'foto' => 'galeri-2.jpg',
-        'deskripsi' => 'Meraih Juara 1 pada ajang lomba tourism quiz.'
-    ],
-    [
-        'judul_kegiatan' => 'JUARA 1 OLIMPIADE AKUNTANSI',
-        'foto' => 'galeri-3.jpg',
-        'deskripsi' => 'Meraih Juara 1 pada ajang olimpiade akuntansi.'
-    ],
-    [
-        'judul_kegiatan' => 'LOMBA PASKIBRA TINGKAT PROVINSI',
-        'foto' => 'galeri-4.jpg',
-        'deskripsi' => 'Mengikuti ajang lomba paskibra tingkat provinsi.'
-    ],
-    [
-        'judul_kegiatan' => 'JUARA 2 & 3 KOMPETISI BAHASA KOREA',
-        'foto' => 'galeri-5.jpg',
-        'deskripsi' => 'Meraih Juara 2 & 3 pada kompetisi bahasa korea.'
-    ],
-    [
-        'judul_kegiatan' => 'JUARA 3 NASIONAL OLIMPIADE PARIWISATA',
-        'foto' => 'galeri-6.jpg',
-        'deskripsi' => 'Meraih Juara 3 olimpiade pariwisata tingkat nasional.'
-    ],
-    [
-        'judul_kegiatan' => 'LABSCHOOL UPI CHAMPIONSHIP',
-        'foto' => 'galeri-7.jpg',
-        'deskripsi' => 'Mengikuti ajang LABSCHOOL UPI CHAMPIONSHIP.'
-    ],
-    [
-        'judul_kegiatan' => 'PENCAK SILAT TOURNAMENT',
-        'foto' => 'galeri-8.jpg',
-        'deskripsi' => 'Mengikuti ajang Pencak Silat Tournament.'
-    ],
-    [
-        'judul_kegiatan' => 'JUARA 1 PASKIBRA PORVINSI',
-        'foto' => 'galeri-9.jpg',
-        'deskripsi' => 'Meraih Juara 1 pada ajang lomba Paskibra Provinsi.'
-    ]
-];
-
+$galeri_data = $conn->query("SELECT id,judul_kegiatan,foto,deskripsi,tanggal FROM galeri ORDER BY id DESC")->fetch_all(MYSQLI_ASSOC);
 $total_galeri = count($galeri_data);
 ?>
 

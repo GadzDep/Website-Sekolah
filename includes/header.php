@@ -6,7 +6,7 @@ $base_url = (basename($_SERVER['PHP_SELF']) === 'index.php') ? '' : '../';
 $current_page = basename($_SERVER['PHP_SELF']);
 
 // Kumpulan daftar halaman untuk masing-masing dropdown menu
-$pages_profil   = ['sejarah.php', 'visi-misi.php', 'guru.php', 'fasilitas.php', 'program-keahlian.php'];
+$pages_profil   = ['profil-sekolah.php', 'sejarah.php', 'visi-misi.php', 'guru.php', 'fasilitas.php', 'program-keahlian.php'];
 $pages_akademik = ['kurikulum.php', 'kalender.php', 'ekstrakurikuler.php', 'kegiatan-belajar.php'];
 $pages_kesiswaan = ['osis.php', 'galeri.php', 'prestasi.php'];
 ?>

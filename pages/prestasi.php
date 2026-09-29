@@ -1,51 +1,7 @@
 <?php
+require_once __DIR__ . '/../config/database.php';
 include '../includes/header.php';
-
-$prestasi_data = [
-    [
-        'judul_prestasi' => 'Juara 1 Tourism Quiz',
-        'penyelenggara' => 'Politeknik Negeri Bandung (POLBAN)',
-        'tingkat' => 'Nasional',
-        'deskripsi' => 'SMK Negeri 1 Bandung Berhasil Meraih Juara 1 pada lomba Tourism Quiz yang di adakan Politeknik Negeri Bandung (POLBAN).',
-        'foto_prestasi' => 'galeri-2.jpg'
-    ],
-    [
-        'judul_prestasi' => 'Juara 1 Olimpiade Akuntansi',
-        'penyelenggara' => 'Universitas Koperasi Indonesia (IKOPIN)',
-        'tingkat' => 'SMA/SMK/MA sederajat',
-        'deskripsi' => 'SMK Negeri 1 Bandung Berhasil Meraih Juara 1 pada olimpiade yang di adakan Universitas Koperasi Indonesia (IKOPIN).',
-        'foto_prestasi' => 'galeri-3.jpg'
-    ],
-    [
-        'judul_prestasi' => 'Juara 2 & 3 Kompetisi Bahasa Korea',
-        'penyelenggara' => 'UNIKOM',
-        'tingkat' => 'SMA/SMK/MA sederajat',
-        'deskripsi' => 'SMK Negeri 1 Bandung Berhasil Meraih Juara 2 dan 3 pada kompetiis bahasa korea yang di adakan UNIKOM.',
-        'foto_prestasi' => 'galeri-5.jpg'
-    ],
-    [
-        'judul_prestasi' => 'Juara 3 Olimpiade Pariwisata',
-        'penyelenggara' => 'Sekolah Vokasi Universitas Gadjah Mada.',
-        'tingkat' => 'SMA/SMK/MA sederajat',
-        'deskripsi' => 'SMK Negeri 1 Bandung Berhasil Meraih Juara 3 pada olimpiade yang di adakan Universitas Gadjah Mada.',
-        'foto_prestasi' => 'galeri-6.jpg'
-    ],
-    [
-        'judul_prestasi' => 'Juara 1 Paskibra',
-        'penyelenggara' => 'MAN 2 Kota Bandung',
-        'tingkat' => 'SMA/SMK/MA sederajat',
-        'deskripsi' => 'SMK Negeri 1 Bandung Berhasil Meraih Juara 1 pada lomba baris berbaris yang di adakan MAN 2 Kota Bandung.',
-        'foto_prestasi' => 'galeri-9.jpg'
-    ],
-        [
-        'judul_prestasi' => 'Juara 1 Film Pende',
-        'penyelenggara' => 'FLS3N Kab. Batang',
-        'tingkat' => 'SMA/SMK/MA sederajat',
-        'deskripsi' => 'SMK Negeri 1 Bandung Berhasil Meraih Juara 1 pada lomba baris berbaris yang di adakan MAN 2 Kota Bandung.',
-        'foto_prestasi' => 'galeri-2.jpg'
-    ],
-];
-
+$prestasi_data = $conn->query("SELECT id,judul_prestasi,penyelenggara,tingkat,deskripsi,foto_prestasi,tahun FROM prestasi ORDER BY tahun DESC,id DESC")->fetch_all(MYSQLI_ASSOC);
 $total_prestasi = count($prestasi_data);
 ?>
 
@@ -169,7 +125,7 @@ $total_prestasi = count($prestasi_data);
                                 <div class="prestasi-image">
 
                                     <img
-                                        src="../assets/galeri/<?php echo htmlspecialchars($row['foto_prestasi']); ?>"
+                                        src="<?php echo file_exists(__DIR__ . '/../assets/prestasi/' . $row['foto_prestasi']) ? '../assets/prestasi/' : '../assets/galeri/'; ?><?php echo htmlspecialchars($row['foto_prestasi']); ?>"
                                         alt="<?php echo htmlspecialchars($row['judul_prestasi']); ?>"
                                         loading="lazy"
                                     >

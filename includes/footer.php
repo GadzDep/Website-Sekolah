@@ -93,6 +93,8 @@
     </div>
 
     <!-- Copyright -->
+    <div class="footer-admin-login"><a href="<?php echo $base_url; ?>admin/login.php" aria-label="Login Admin" title="Login Admin">Admin</a></div>
+
     <div class="footer-bottom">
         <div class="footer-bottom-container">
             <p>
